@@ -1,0 +1,14 @@
+section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 20px;
+  color: var(--color-muted);
+}

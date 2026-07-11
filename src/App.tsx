@@ -1,9 +1,7 @@
+import Hero from "./components/Hero/Hero";
+
 function App() {
-  return (
-    <div>
-      <h1>Atomity Coding challenge</h1>
-    </div>
-  );
+  return <Hero />;
 }
 
 export default App;
