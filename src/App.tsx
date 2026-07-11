@@ -1,25 +1,7 @@
 import Hero from "./components/Hero/Hero";
 import ProviderCard from "./components/ProviderCard/ProviderCard";
 import "./App.css";
-
-const providers = [
-  {
-    name: "AWS",
-    resources: 120,
-  },
-  {
-    name: "Azure",
-    resources: 95,
-  },
-  {
-    name: "Google Cloud",
-    resources: 110,
-  },
-  {
-    name: "Oracle Cloud",
-    resources: 80,
-  },
-];
+import { providers } from "./data/providers";
 
 function App() {
   return (
