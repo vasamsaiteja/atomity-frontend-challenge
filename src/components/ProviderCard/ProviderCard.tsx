@@ -1,16 +1,16 @@
+import type { Provider } from "../../types/Provider";
 import "./ProviderCard.css";
 
 type ProviderCardProps = {
-  name: string;
-  resources: number;
+  provider: Provider;
 };
 
-function ProviderCard({ name, resources }: ProviderCardProps) {
+function ProviderCard({ provider }: ProviderCardProps) {
   return (
     <article className="provider-card">
-      <h2>{name}</h2>
+      <h2>{provider.name}</h2>
       <p>Cloud Provider</p>
-      <strong>{resources}</strong>
+      <strong>{provider.resources}</strong>
     </article>
   );
 }

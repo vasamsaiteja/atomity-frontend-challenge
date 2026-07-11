@@ -1,4 +1,6 @@
-export const providers = [
+import type { Provider } from "../types/Provider";
+
+export const providers: Provider[] = [
   {
     name: "AWS",
     resources: 120,

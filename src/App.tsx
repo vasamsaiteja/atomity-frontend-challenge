@@ -9,11 +9,7 @@ function App() {
       <Hero />
       <section className="providers">
         {providers.map((provider) => (
-          <ProviderCard
-            key={provider.name}
-            name={provider.name}
-            resources={provider.resources}
-          />
+          <ProviderCard key={provider.name} provider={provider} />
         ))}
       </section>
     </main>
