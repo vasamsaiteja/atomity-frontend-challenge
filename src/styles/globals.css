@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #14b8a6;
+  --color-bg: #f8fafc;
+  --color-surface: white;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --radius: 16px;
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
+}
