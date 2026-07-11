@@ -1,5 +1,9 @@
-function ProviderCard() {
-  return <div>Provider Card</div>;
+type ProviderCardProps = {
+  name: string;
+};
+
+function ProviderCard({ name }: ProviderCardProps) {
+  return <div>{name}</div>;
 }
 
 export default ProviderCard;

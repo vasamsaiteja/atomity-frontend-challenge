@@ -5,7 +5,9 @@ function App() {
   return (
     <main>
       <Hero />
-      <ProviderCard />
+      <ProviderCard name="AWS" />
+      <ProviderCard name="Azure" />
+      <ProviderCard name="Google Cloud" />
     </main>
   );
 }
