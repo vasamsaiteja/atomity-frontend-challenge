@@ -1,7 +1,13 @@
 import Hero from "./components/Hero/Hero";
+import ProviderCard from "./components/ProviderCard/ProviderCard";
 
 function App() {
-  return <Hero />;
+  return (
+    <main>
+      <Hero />
+      <ProviderCard />
+    </main>
+  );
 }
 
 export default App;
