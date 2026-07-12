@@ -14,7 +14,7 @@ A modern, responsive React application that visualizes cloud infrastructure prov
 
 Example:
 
-https://your-project.vercel.app
+https://atomity-cloud-dashboard-eosin.vercel.app/
 
 ---
 
