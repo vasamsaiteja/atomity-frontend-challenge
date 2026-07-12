@@ -1,0 +1,18 @@
+.summary-card {
+  background: var(--color-surface);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  min-width: 220px;
+  flex: 1;
+}
+
+.summary-card p {
+  color: var(--color-muted);
+  margin-bottom: 10px;
+}
+
+.summary-card h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
