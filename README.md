@@ -1,75 +1,181 @@
-# React + TypeScript + Vite
+# Cloud Infrastructure Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React application that visualizes cloud infrastructure providers using data fetched from the DummyJSON API. The application focuses on clean UI, smooth animations, reusable components, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Application Preview
 
-## React Compiler
+![Cloud Dashboard](src/assets/Application-Preview.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Live Demo
 
-## Expanding the ESLint configuration
+> Add your Vercel deployment URL here after deployment.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Example:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+https://your-project.vercel.app
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
 
+- Responsive dashboard layout
+- Search providers by name
+- Loading skeletons while fetching data
+- Error state handling
+- Empty search state
+- Animated cards using Framer Motion
+- React Query for server state management
+- TypeScript for type safety
+- Modern and reusable component architecture
+
+---
+
+## Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- TanStack Query (React Query)
+- Framer Motion
+- CSS3
+
+---
+
+## Folder Structure
+
+```text
+src
+│
+├── api
+│   └── api.ts
+│
+├── components
+│   ├── AnimatedCard
+│   ├── EmptyState
+│   ├── ErrorState
+│   ├── Footer
+│   ├── Hero
+│   ├── SearchBar
+│   └── SkeletonCard
+│
+├── hooks
+│   └── userProviders.ts
+│
+├── styles
+│   └── globals.css
+│
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository
 
+```bash
+git clone https://github.com/vasamsaiteja/atomity-frontend-challenge.git
 ```
+
+Navigate into the project
+
+```bash
+cd atomity-frontend-challenge
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview the production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Design Decisions
+
+### React Query
+
+React Query was used to manage server state, including loading, error, and caching behavior, while keeping the UI components clean.
+
+### Component-Based Architecture
+
+The application is divided into reusable components, making the codebase easier to maintain and extend.
+
+### Framer Motion
+
+Framer Motion was used to provide subtle animations that improve user experience without affecting performance.
+
+### Responsive Design
+
+CSS Grid and Flexbox are used throughout the application to ensure a responsive experience across desktop, tablet, and mobile devices.
+
+---
+
+## Error Handling
+
+The application handles:
+
+- Network request failures
+- Loading state
+- Empty search results
+
+---
+
+## Future Improvements
+
+Given more time, the following enhancements could be added:
+
+- Dark mode support
+- Sorting and filtering options
+- Pagination or infinite scrolling
+- Provider details page
+- Unit and integration tests
+- Accessibility improvements (ARIA attributes, keyboard navigation)
+- API abstraction layer with Axios
+
+---
+
+## Performance Optimizations
+
+- React Query caching
+- Reusable UI components
+- CSS Grid responsive layout
+- Framer Motion optimized animations
+- TypeScript for compile-time safety
+
+---
+
+## Author
+
+**Saiteja Vasamsetti**
+
+Frontend Developer
+
+GitHub:
+https://github.com/vasamsaiteja
+
+LinkedIn:
+https://www.linkedin.com/in/vasamsaiteja/
+
+---

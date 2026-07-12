@@ -7,13 +7,15 @@ type SearchBarProps = {
 
 function SearchBar({ value, onChange }: SearchBarProps) {
   return (
-    <input
-      type="text"
-      placeholder="Search provider..."
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      className="search-bar"
-    />
+    <div className="search-wrapper">
+      <input
+        type="text"
+        placeholder="Search team members..."
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="search-bar"
+      />
+    </div>
   );
 }
 
